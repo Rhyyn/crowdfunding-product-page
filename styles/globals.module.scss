@@ -1,0 +1,71 @@
+@use "./var.scss";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var.$font-comi;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mainSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundImageContainer {
+    height: 300px;
+
+    @include var.respond-to("mobile") {
+        height: 300px;
+    }
+
+    @include var.respond-to("desktop") {
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.image {
+    @include var.respond-to("mobile") {
+        background-image: url(images/image-hero-default.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 768px;
+        height: 400px;
+        left: calc(50% - 770px / 2 + 0.5px);
+        top: -100px;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 1230px;
+        height: 600px;
+        left: calc(50% - 1230px / 2 + 0.5px);
+        top: -300px;
+    }
+
+    @include var.respond-to("desktop") {
+        background-image: url(images/image-hero-desktop.png);
+        height: 900px;
+        background-size: contain;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+}
+
+.backgroundWhite {
+    background-color: lightcoral;
+    height: calc(100vh - 300px);
+}
