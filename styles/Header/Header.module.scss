@@ -1,0 +1,37 @@
+@use "../var.scss";
+
+.header {
+    background: linear-gradient(to top, transparent 0%, black 180%);
+    @include var.respond-to("mobile") {
+        height: 300px;
+    }
+
+    @include var.respond-to("desktop") {
+        height: 350px;
+    }
+    @include var.respond-to("ultrawide") {
+        height: 400px;
+    }
+}
+
+.headerDivContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 128px;
+}
+
+.brandLogo {
+    height: 20px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.listItem {
+    padding: 1rem;
+    color: white;
+    background-blend-mode: multiply;
+}
