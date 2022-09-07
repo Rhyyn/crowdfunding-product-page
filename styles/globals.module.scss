@@ -24,7 +24,6 @@ a {
 
 .backgroundImageContainer {
     height: 300px;
-
     @include var.respond-to("mobile") {
         height: 300px;
     }
@@ -41,7 +40,7 @@ a {
 
 .image {
     @include var.respond-to("mobile") {
-        background-image: url(images/image-hero-default.png);
+        background-image:linear-gradient(to top, transparent 0%, black 180%), url(images/image-hero-default.png);
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -59,7 +58,7 @@ a {
     }
 
     @include var.respond-to("desktop") {
-        background-image: url(images/image-hero-desktop.png);
+        background:linear-gradient(to top, transparent 70%, black 108%), url(images/image-hero-desktop.png);
         width: 100%;
         height: 800px;
         background-size: contain;
@@ -67,11 +66,15 @@ a {
         left: 0;
     }
     @include var.respond-to("ultrawide") {
+        background:linear-gradient(to top, transparent 60%, black 95%), url(images/image-hero-desktop.png);
+        width: 100%;
+        height: 800px;
+        background-size: contain;
         top: -30%;
     }
 }
 
 .backgroundWhite {
-    background-color: lightcoral;
+    background-color: #ffff;
     height: calc(100vh - 300px);
 }
