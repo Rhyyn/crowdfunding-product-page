@@ -4,13 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.introContainer {
-    height: 300px;
-    background-color: antiquewhite;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     @include var.respond-to("mobile") {
     }
@@ -22,3 +19,93 @@
     @include var.respond-to("ultrawide") {
     }
 }
+
+.introContainer {
+    height: 275px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoMastercraft {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -30px;
+}
+
+.introTitle {
+    margin-top: 3.5rem;
+    margin-bottom: 1.2rem;
+
+    @include var.respond-to("mobile") {
+    }
+    @include var.respond-to("tablet") {
+    }
+    @include var.respond-to("desktop") {
+        font-size: 1.7rem;
+    }
+    @include var.respond-to("ultrawide") {
+    }
+}
+
+.introDesc {
+    color: var.$color-font-grey;
+    margin-top: 0;
+    margin-bottom: 2.7rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 56px;
+}
+
+.backButton {
+    width: 204px;
+    border-radius: 34px;
+    border: none;
+    font-family: var.$font-comi;
+    background-color: var.$color-main;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bookmarkButton {
+    display: flex;
+    width: 174px;
+    border-radius: 34px;
+    border: none;
+    padding: 0;
+    font-family: var.$font-comi;
+    color: var.$color-font-grey;
+    font-weight: 600;
+    // background-image: url("images/icon-bookmark.svg");
+    // background-repeat: no-repeat;
+}
+
+.svg {
+    display: block;
+    flex: 0 0 45%;
+}
+
+.bookmarkTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookmarkText {
+    font-size: 1rem;
+}
+
+// .bookmarkIcon {
+//     position: relative;
+//     left: 0;
+// }
