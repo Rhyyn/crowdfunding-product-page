@@ -8,9 +8,10 @@ function App() {
         <div className="App">
             <section className={styles.mainSection}>
                 <Header></Header>
-                <div className={styles.backgroundImageContainer}>
+                {/* <div className={styles.backgroundImageContainer}>
                     <div className={styles.image}></div>
-                </div>
+                </div> */}
+
                 <div className={styles.backgroundWhite}>
                     <Content></Content>
                 </div>

@@ -17,9 +17,10 @@ a {
 }
 
 .mainSection {
-    height: 100vh;
+    height: 2040px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(243, 243, 243);
 }
 
 .backgroundImageContainer {
@@ -31,7 +32,7 @@ a {
     @include var.respond-to("desktop") {
         height: 350px;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
     }
     @include var.respond-to("ultrawide") {
         height: 400px;
@@ -75,6 +76,7 @@ a {
 }
 
 .backgroundWhite {
-    background-color: rgb(243, 243, 243);
+    position: relative;
+    // background-color: rgb(243, 243, 243);
     height: calc(100vh - 300px);
 }

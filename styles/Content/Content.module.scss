@@ -1,13 +1,13 @@
 @use "../var.scss";
 
 .contentSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -100px;
+    // transform: translate(-50%, 0);
 
     @include var.respond-to("mobile") {
     }
@@ -19,5 +19,3 @@
     @include var.respond-to("ultrawide") {
     }
 }
-
-
