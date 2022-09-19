@@ -12,3 +12,17 @@
     align-items: center;
     margin-bottom: 2rem;
 }
+
+.title {
+    font-family: var.$font-comi;
+    text-align: left;
+}
+
+.desc {
+    width: 80%;
+    font-family: var.$font-comi;
+    color: var.$color-font-grey;
+    text-align: center;
+    line-height: 22px;
+    font-size: 0.8rem;
+}

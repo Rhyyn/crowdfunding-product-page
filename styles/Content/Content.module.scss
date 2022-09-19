@@ -10,8 +10,10 @@
     // transform: translate(-50%, 0);
 
     @include var.respond-to("mobile") {
+        width: 90vw;
     }
     @include var.respond-to("tablet") {
+        width: 730px;
     }
     @include var.respond-to("desktop") {
         width: 730px;
