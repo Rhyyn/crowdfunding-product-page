@@ -1,0 +1,68 @@
+@use "../var.scss";
+
+.tierCard {
+    width: 90%;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.tierHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem 2rem;
+}
+
+.tierName {
+    font-family: var.$font-comi;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tierPrice {
+    color: var.$color-main;
+}
+
+.tierDesc {
+    width: 90%;
+    font-family: var.$font-comi;
+    color: var.$color-font-grey;
+    text-align: center;
+    line-height: 22px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.tierFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 1rem 0;
+}
+
+.tierAmountContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.tierAmountLeft {
+    font-weight: 600;
+}
+
+.tierAmountText {
+    color: var.$color-font-grey;
+}
+
+.tierSelectButton {
+    width: 204px;
+    border-radius: 34px;
+    border: none;
+    font-family: var.$font-comi;
+    background-color: var.$color-main;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
